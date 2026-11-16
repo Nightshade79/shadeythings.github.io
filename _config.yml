@@ -1,0 +1,26 @@
+title: Shadeythings Lab
+tagline: "~*~ homelab build logs & other questionable decisions ~*~"
+description: Homelab build logs, Kubernetes, and self-hosted infrastructure notes.
+url: "https://blog.shadeythings.com"
+baseurl: ""
+lang: en-AU
+
+github_username: Nightshade79
+
+# Optional: path or URL of an audio file you have the rights to use.
+# Leave empty to hide the music player.
+music_url: ""
+music_title: ""
+
+markdown: kramdown
+permalink: /:year/:month/:title/
+paginate: false
+
+plugins:
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

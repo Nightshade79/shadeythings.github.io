@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Green wireframe cube on a dark grid">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b3a5c"/>
+      <stop offset="1" stop-color="#01101e"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" fill="url(#bg)"/>
+  <g stroke="#2a8fb5" stroke-width="1" opacity="0.45" fill="none">
+    <path d="M0 170h240M0 195h240M0 222h240"/>
+    <path d="M120 150L-20 240M120 150L40 240M120 150L80 240M120 150L120 240M120 150L160 240M120 150L200 240M120 150L260 240"/>
+  </g>
+  <g stroke="#3fe58a" stroke-width="2" fill="none" stroke-linejoin="round">
+    <path d="M120 48L176 80V144L120 176L64 144V80Z"/>
+    <path d="M64 80L120 112L176 80M120 112V176"/>
+  </g>
+  <g stroke="#ff5a4a" stroke-width="1.5" fill="none" opacity="0.9">
+    <path d="M120 24L196 112L120 200L44 112Z"/>
+  </g>
+  <circle cx="120" cy="112" r="5" fill="#ffe14d"/>
+  <g fill="#7fe9ff" opacity="0.9">
+    <circle cx="26" cy="30" r="1.5"/><circle cx="212" cy="40" r="1.5"/><circle cx="200" cy="150" r="1.2"/><circle cx="34" cy="132" r="1.2"/>
+  </g>
+</svg>

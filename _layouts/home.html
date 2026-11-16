@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<div class="cols">
+  <aside class="left">
+    {% include profile.html %}
+  </aside>
+
+  <div class="right">
+    <section class="box">
+      <h2>Briefing</h2>
+      <h3>About me</h3>
+      {{ content }}
+    </section>
+
+    {% include top8.html %}
+
+    <section class="box">
+      <h2>Latest entries</h2>
+      <p class="small">[<a href="{{ '/feed.xml' | relative_url }}">Subscribe to this blog</a>] [<a href="{{ '/posts/' | relative_url }}">View all entries</a>]</p>
+      <ul class="entries">
+        {% for post in site.posts limit: 5 %}
+        <li>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <span class="small">{{ post.date | date: "%e %b %Y" }}</span>
+          {% if post.summary %}<br><span class="small">{{ post.summary }}</span>{% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    <section class="box">
+      <h2>System log</h2>
+      <ul class="log">
+        <li>proxmox: u up?</li>
+        <li>kubernetes: CrashLoopBackOff, but make it fashion</li>
+        <li>argo cd: drift detected, we need to talk</li>
+        <li>netbox: i was never consulted</li>
+        <li class="cursor"></li>
+      </ul>
+    </section>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<section class="box top8">
+  <h2>Active services</h2>
+  <p class="small">My top services. Rankings are final. Do not @ me.</p>
+  <ol class="grid8">
+    {% for item in site.data.top8 limit: 8 %}
+    <li>
+      <span class="rank">{{ forloop.index | prepend: "0" }}</span>
+      <span class="tag">ONLINE</span>
+      <strong>{% if item.link %}<a href="{{ item.link }}">{{ item.name }}</a>{% else %}{{ item.name }}{% endif %}</strong>
+      <span class="small">{{ item.note }}</span>
+    </li>
+    {% endfor %}
+  </ol>
+</section>

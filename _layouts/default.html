@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title and page.url != '/' %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 160 }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  {% feed_meta %}
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <a href="{{ '/' | relative_url }}" class="logo">SHADEYTHINGS<span class="sep">/</span>LAB</a>
+      <nav>
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/posts/' | relative_url }}">Blog</a>
+        <a href="{{ '/about/' | relative_url }}">About</a>
+        <a href="{{ '/feed.xml' | relative_url }}">Subscribe</a>
+        <button id="theme-toggle" type="button" aria-pressed="false">Plain mode</button>
+      </nav>
+    </header>
+
+    {{ content }}
+
+    <footer>
+      <p>&copy; {{ 'now' | date: '%Y' }} shadeythings &bull; Visits (this browser): <span class="counter" id="visit-counter">0001337</span></p>
+      <p class="small">Built with Jekyll.</p>
+    </footer>
+  </div>
+
+  <div class="ver" aria-hidden="true">LAB OS 1.0.0</div>
+
+  {% if site.music_url != "" %}
+  <div class="player box" id="player">
+    <h2>Audio</h2>
+    <p class="small">{{ site.music_title | default: "Untitled" }}</p>
+    <audio id="song" src="{{ site.music_url | relative_url }}" loop></audio>
+    <button id="play-btn" type="button">Play</button>
+  </div>
+  {% endif %}
+
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>

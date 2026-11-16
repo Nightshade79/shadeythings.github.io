@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<div class="cols">
+  <aside class="left">
+    {% include profile.html %}
+  </aside>
+
+  <div class="right">
+    <article class="box post">
+      <h2>{{ page.title }}</h2>
+      <p class="small">Posted {{ page.date | date: "%A, %e %B %Y" }}{% if page.tags.size > 0 %} &bull; Tags: {{ page.tags | join: ", " }}{% endif %}</p>
+      {{ content }}
+      <p class="small"><a href="{{ '/posts/' | relative_url }}">&laquo; Back to all entries</a></p>
+    </article>
+  </div>
+</div>

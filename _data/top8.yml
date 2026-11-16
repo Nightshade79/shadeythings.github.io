@@ -1,0 +1,17 @@
+# Your "Top 8". Edit freely: name, short note, optional link.
+- name: Proxmox
+  note: runs the VMs
+- name: Kubernetes
+  note: runs everything else
+- name: Argo CD
+  note: keeps it honest
+- name: TrueNAS
+  note: holds the bits
+- name: GitLab
+  note: where the code lives
+- name: NetBox
+  note: the source of truth
+- name: Plex
+  note: the fun part
+- name: UniFi
+  note: the wires
