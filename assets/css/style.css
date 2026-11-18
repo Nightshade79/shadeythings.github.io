@@ -45,7 +45,7 @@ a:visited { color: #a9ffd0; }
 a:hover { color: #fff; text-shadow: 0 0 8px var(--cyan); }
 
 .wrap {
-  max-width: 940px;
+  max-width: max(940px, 70vw);
   margin: 0 auto;
   padding: 14px 14px 60px;
 }

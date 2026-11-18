@@ -3,21 +3,16 @@ layout: page
 title: About
 permalink: /about/
 ---
-Shadeythings Lab is a homelab and side-project blog.
+Hi, I’m Ryan.
 
-**What you will find here**
+I’m a Systems/DevOps Engineer with a deep dislike of menial tasks, which means I automate nearly everything I get my hands on.
 
-- Build logs for new services and infrastructure
-- Troubleshooting write-ups, including the dead ends
-- Notes on tooling and workflows that earned their place
+Fun stuff first. I’m 100% ADHD and ASD, professionally diagnosed more than once, and it will come out in my writing. I started this blog to help my employability, but it’s also my creative outlet. Please don’t read it as a picture of how I act in a professional workspace.
 
-**Entry format**
+It started with a 486 and Q-BASIC. My brother and I used that machine to teach ourselves to code, and it’s still one of my most prized possessions. 
 
-1. Problem
-2. Approach
-3. Result
-4. Lessons learned
+These days I’m a Systems/DevOps Engineer with 16 years experience working across education, health, finance and a whole lot more. Most recently working at an MSP (Which is how I have so many industries under my belt). Along the way I’ve automated more jobs and tasks than I care to remember.
 
-**Customising this page**
+The eternal puzzle of learning new things, fixing what’s broken, and finding out why a technology works the way it does is what keeps me going. The history side is also just as interesting, because it can shine a light on why some decision someone made on a whim 30+ years ago is now biting us, and possibly how to work around it.
 
-Edit your Top 8 in `_data/top8.yml`, swap `assets/img/avatar.svg` for your own picture, and change the profile details in `_includes/profile.html`.
+Outside of the standard tech stacks I love tinkering with low-level electrical engineering, even if that just winds up another arm of my homelab, gaming, cosplay, anime and all that nerd stuff we used to hide away.

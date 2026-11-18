@@ -6,12 +6,12 @@
 - name: Argo CD
   note: keeps it honest
 - name: TrueNAS
-  note: holds the bits
+  note: holds most of the bits
 - name: GitLab
   note: where the code lives
 - name: NetBox
   note: the source of truth
 - name: Plex
   note: the fun part
-- name: UniFi
+- name: Arista+Unifi
   note: the wires
